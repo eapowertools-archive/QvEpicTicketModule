@@ -75,10 +75,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="epicwebticket.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="epicwebticket.aspx.cs">
+      <DependentUpon>epicwebticket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="epicwebticket.aspx.designer.cs">
+      <DependentUpon>epicwebticket.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

@@ -36,14 +36,7 @@ namespace QVEpicTicketModule
             //Step 3 - Check for the existence of an Accesspoint session cookie to avoid ticket process.
             HttpCookie cookie = Request.Cookies.Get("AccessPointSession");
 
-            if (auth(cookie,ConfigurationManager.AppSettings["QlikViewHostname"],EpicUser, document))
-            {
-                Console.Write("YAY!");
-            }
-            else
-            {
-                Console.Write("BOO!");
-            }
+            auth(cookie, ConfigurationManager.AppSettings["QlikViewServerHostname"], EpicUser, document);
 
         }
 

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="epicwebticket.aspx.cs" Inherits="QVEpicTicketModule.epicwebticket" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="epicwebticket.aspx.cs" Inherits="QVEpicTicketModule.epicwebticket" %>
 
 <!DOCTYPE html>
 
