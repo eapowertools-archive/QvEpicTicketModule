@@ -46,7 +46,7 @@ namespace QVEpicTicketModule
         {
             try
             {
-                string QlikViewServerURL = "http://10.8.114.11/qvajaxzfc/getwebticket.aspx";
+                string QlikViewServerURL = "http://" + ConfigurationManager.AppSettings["QlikViewServerIPAddress"] + "/qvajaxzfc/getwebticket.aspx";
                 string webTicketXml = string.Format("<Global method=\"GetWebTicket\"><UserId>{0}</UserId></Global>", user);
 
                 HttpWebRequest client = (HttpWebRequest)WebRequest.Create(new Uri(QlikViewServerURL));
