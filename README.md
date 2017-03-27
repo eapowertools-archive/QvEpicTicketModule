@@ -36,7 +36,7 @@ QlikView web ticketing service for use with Epic Hyperspace implementations.
     * The QlikViewServerIPAddress is the ip address used to contact the QlikView ticketing webservice to acquire a ticket for authentication.
     * The QlikViewServerHostname key takes a value representing the QlikView Server name.  This key/value pair is used by the ticket module to identify the server to connect to for redirecting requests.
     * The iv is a portion of the encryption component of the request coming from Epic.  It needs to be a 16 digit alphanumeric string.  The iv value must match the iv value set in the configuration file for the QlikViewEpic2015DLL.
-    * The sharedSecret is the passphrase for the encryption component of the request coming from Epic.  It neesd to be a 16 digit alphanumeric string.  The sharedSecret value must match the sharedSecret value set in the configuration file for the QlikViewEpic2015DLL.
+    * The sharedSecret is the passphrase for the encryption component of the request coming from Epic.  It neesd to be a 16 digit alphanumeric string.  The sharedSecret value must match the key value set in the configuration file for the QlikViewEpic2015DLL.
 
 3. Copy this section of the web.config file and paste it within the configuration element of the web.config file located at %QlikViewServerInstallPath%\Server\QlikViewClients\QlikViewAjax and save the file.  ___(%QlikViewServerInstallPath% default == c:\program files\qlikview)___
 
